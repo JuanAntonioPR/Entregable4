@@ -1,0 +1,95 @@
+@use "../abstracts/variables" as v;
+
+.contact__form {
+    margin: 0 auto;
+    padding: 20px;
+    font-family: v.$fuente;
+    background-color: v.$color-gris-oscuro;
+
+    form {
+        display: flex;
+        flex-direction: column;
+    
+        .input-group {
+            position: relative;
+            margin-bottom: 40px;
+    
+            textarea {
+                resize: none;
+            }
+        
+            input,
+            textarea {
+                width: 100%;
+                border: none;
+                border-bottom: 2px solid v.$color-gris-claro;
+                background: transparent;
+                font-size: 1rem;
+                padding: 10px 20px;
+                font-family: v.$fuente;
+                color: v.$color-blanco;
+        
+                &::placeholder {
+                    font-family: v.$fuente;
+                    color: v.$color-gris-claro;
+                }
+        
+                &:focus {
+                outline: none;
+                }
+        
+                &:invalid:not(:placeholder-shown) {
+                border-bottom-color: v.$color-rojo;
+                }
+        
+                &:valid:not(:placeholder-shown) {
+                border-bottom-color: v.$color-verde;
+                }
+            }
+    
+            .error-message {
+                position: absolute;
+                bottom: -20px;
+                right: 0;
+                font-size: 0.8rem;
+                color: v.$color-rojo;
+                display: none;
+                }
+          
+              // Mostrar mensaje si no es válido y se ha intentado enviar
+            input:invalid:not(:placeholder-shown) + .error-message,
+            textarea:invalid:not(:placeholder-shown) + .error-message {
+                display: block;
+            }
+        }
+
+        .input-group:has(input:invalid:not(:placeholder-shown))::after {
+            content: '';
+            background-image: url('../img/ico-warning.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 0;
+            bottom: 14px;
+          }
+      
+        button {
+            color: v.$color-blanco;
+            background-color: transparent;
+            align-self: flex-end;
+            width: max-content;
+            border: none;
+            border-bottom: 2px solid v.$color-gris-claro;
+            font-size: 1rem;
+            font-family: v.$fuente;
+    
+            &:hover {
+                color: v.$color-verde;
+                border-bottom: 2px solid v.$color-verde;
+            }
+        }
+    }
+}
+  

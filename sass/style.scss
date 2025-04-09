@@ -7,3 +7,6 @@
 @use "./themes/themes";
 @use "./settings";
 
+body {
+    background-color: ab.$color-negro;
+}

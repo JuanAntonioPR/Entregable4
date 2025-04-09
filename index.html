@@ -89,7 +89,24 @@
             <p class="contact_box--description">I would love to hear about your project and could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
           </div>
           <div class="contact__form">
-            <form action=""></form>
+            <form action="#" method="post" novalidate>
+              <div class="input-group">
+                <input type="text" name="nombre" placeholder="NAME" required>
+                <span class="error-message">Required field</span>
+              </div>
+          
+              <div class="input-group">
+                <input type="email" name="email" placeholder="EMAIL" required>
+                <span class="error-message">Sorry, invalid format here</span>
+              </div>
+          
+              <div class="input-group">
+                <textarea name="comentarios" rows="6" placeholder="MESSAGE" required></textarea>
+                <span class="error-message">Required field</span>
+              </div>
+          
+              <button type="submit">SEND MESSAGE</button>
+            </form>
           </div>
         </section>
         <hr class="hr3">

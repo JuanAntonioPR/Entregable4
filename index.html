@@ -33,7 +33,7 @@
           <div class="front__content">
             <h1 class="front__content--title">Nice to meet you! I’m Adam Keyes.</h1>
             <p class="front__content--description">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
-            <a href="#" class="front__content--link">CONTACT ME</a>
+            <a href="#" class="button">CONTACT ME</a>
           </div>
         </section>
         <hr class="hr1">
@@ -67,12 +67,15 @@
         <section class="projects">
           <div class="projects__header">
             <h2 class="projects__header--title"></h2>
-            <a href="#" class="projects__header--link">CONTACT ME</a>
+            <a href="#" class="button">CONTACT ME</a>
           </div>
           <article class="projects__content">
-            <div class="projects__content--box">
-              <a href="#" class="projects__content--box-link">VIEW PROJECT</a>
-              <a href="#" class="projects__content--box-link">VIEW CODE</a>
+            <div class="article-image">
+              <picture>
+                <source srcset="./img/img-portfolio1@3x.png" media="(min-width: 1200px)"/>
+                <source srcset="./img/img-portfolio1@2x.png" media="(min-width: 768px)"/>  
+                <img src="./img/img-portfolio1.png" alt="imagen portfolio1"/>
+              </picture>
             </div>
             <div class="projects__content--summary">
               <h4 class="projects__content--summary-title">DESIGN PORTFOLIO</h4>
@@ -80,6 +83,10 @@
                 <p>HTML</p>
                 <p>CSS</p>
               </div>
+            </div>
+            <div class="projects__content--buttons">
+              <a href="#" class="button">VIEW PROJECT</a>
+              <a href="#" class="button">VIEW CODE</a>
             </div>
           </article>
         </section>

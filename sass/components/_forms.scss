@@ -1,3 +1,4 @@
+@use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
 
 .contact__form {
@@ -76,19 +77,8 @@
           }
       
         button {
-            color: v.$color-blanco;
-            background-color: transparent;
+            @include m.button;
             align-self: flex-end;
-            width: max-content;
-            border: none;
-            border-bottom: 2px solid v.$color-gris-claro;
-            font-size: 1rem;
-            font-family: v.$fuente;
-    
-            &:hover {
-                color: v.$color-verde;
-                border-bottom: 2px solid v.$color-verde;
-            }
         }
     }
 }

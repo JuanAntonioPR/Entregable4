@@ -9,4 +9,192 @@
 
 body {
     background-color: ab.$color-negro;
+
+    .container {
+        .main {
+            .front {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                align-items: center;
+                margin-top: -96px;
+                background-image: url(../img/img-deco-ovalos.svg), url(../img/img-deco-circulo.svg);
+                background-repeat: no-repeat, no-repeat;
+                background-size: 124%, 45%;
+                background-position: 300% 19%, 150% 39%;
+                padding-bottom: 40px;
+
+                .profile-image {
+                    background: linear-gradient(to bottom, #24242443 50%, #242424c6);
+                    padding-top: 150px;
+                    width: 218px;
+
+                    img {
+                        width: 100%;
+                        translate: 0px 10px;
+                    }
+                }
+
+                .front__content {
+                    padding: 40px 20px 40px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 30px;
+
+                    h1 {
+                        font-size: ab.$headingL - 6px;
+
+                        span {
+                            text-decoration: underline;
+                            text-decoration-color: ab.$color-verde;
+                            text-underline-offset: 9px;
+                        }
+                    }
+
+                    p {
+                        font-size: ab.$bodyL;
+                        text-align: center;
+                        line-height: 30px;
+                    }
+
+                    a {
+                        font-size: ab.$headingM - 2px;
+                    }
+                }
+            }
+
+            .skills {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                align-items: center;
+                background-image: url(../img/img-deco-ovalos.svg);
+                background-repeat: no-repeat;
+                background-size: 110%;
+                background-position: 220px 580px;
+                padding-bottom: 40px;
+
+                .skill__box {
+                    width: max-content;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h3 {
+                        font-size: ab.$headingM + 8px;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-size: ab.$bodyL;
+                        text-align: center;
+                        color: ab.$color-gris-claro;
+                    }
+                }
+            }
+
+            .projects {
+                padding: 0 20px 60px 20px;
+
+                .projects__header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-bottom: 30px;
+
+                    h2 {
+                        font-size: ab.$headingL - 6px;
+                    }
+
+                    a { 
+                        align-self: flex-start;
+                        padding-top: 12px;
+                        font-size: ab.$bodyL - 2px;
+                    }
+                }
+
+                .projects__content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+
+                    .article-image picture img {
+                        width: 100%;
+
+                        &:hover {
+                            opacity: 0.3;
+                        }
+                    }
+
+                    .projects__content--summary {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px; 
+
+                        h4 {
+                            font-size: ab.$headingM;
+                        }
+
+                        .technologies {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 20px;
+                            color: ab.$color-gris-claro;
+                        }
+                    }
+
+                    .projects__content--buttons {
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: 40px;
+                    }
+                }
+            }
+
+            .contact {
+                background-color: ab.$color-gris-oscuro;
+                padding-top: 40px;
+                display: flex;
+                flex-direction: column;
+                background-image: url(../img/img-deco-ovalos.svg);
+                background-repeat: no-repeat;
+                background-size: 110%;
+                background-position: -250px 76%;
+
+                .contact__box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                    padding: 20px;
+
+                    h2 {
+                        font-size: ab.$headingL;
+                    }
+
+                    p {
+                        color: ab.$color-gris-claro;
+                        font-size: ab.$bodyL;
+                        line-height: 30px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+hr {
+    width: calc(100vw - 40px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 2px;
+    background-color: ab.$color-gris-claro;
 }

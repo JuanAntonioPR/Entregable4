@@ -29,6 +29,7 @@
 @mixin button {
   font-family: v.$fuente;
   font-size: 1rem;
+  font-weight: 600;
   letter-spacing: 2px;
   color: v.$color-blanco;
   text-decoration: none;

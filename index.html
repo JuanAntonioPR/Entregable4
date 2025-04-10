@@ -11,7 +11,7 @@
   <body>
     <div class="container">
       <header class="header">
-        <img src="./img/logo.svg" alt="logo">
+        <img class="logo" src="./img/logo.svg" alt="logo">
         <nav class="navbar">
           <ul>
             <li><img src="./img/ico-github.svg" alt="logo github"></li>
@@ -31,7 +31,7 @@
             </picture>
           </div>
           <div class="front__content">
-            <h1 class="front__content--title">Nice to meet you! I’m Adam Keyes.</h1>
+            <h1 class="front__content--title">Nice to meet you! I’m <span>Adam Keyes</span>.</h1>
             <p class="front__content--description">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
             <a href="#" class="button">CONTACT ME</a>
           </div>
@@ -62,11 +62,11 @@
             <h3>Sass</h3>
             <p>3 Years Experience</p>
           </div>
+          <hr class="hr2">
         </section>
-        <hr class="hr2">
         <section class="projects">
           <div class="projects__header">
-            <h2 class="projects__header--title"></h2>
+            <h2 class="projects__header--title">Projects</h2>
             <a href="#" class="button">CONTACT ME</a>
           </div>
           <article class="projects__content">
@@ -89,11 +89,115 @@
               <a href="#" class="button">VIEW CODE</a>
             </div>
           </article>
+          <article class="projects__content">
+            <div class="article-image">
+              <picture>
+                <source srcset="./img/img-portfolio2@3x.png" media="(min-width: 1200px)"/>
+                <source srcset="./img/img-portfolio2@2x.png" media="(min-width: 768px)"/>  
+                <img src="./img/img-portfolio2.png" alt="imagen portfolio2"/>
+              </picture>
+            </div>
+            <div class="projects__content--summary">
+              <h4 class="projects__content--summary-title">E-LEARNING LANDING PAGE</h4>
+              <div class="technologies">
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
+            </div>
+            <div class="projects__content--buttons">
+              <a href="#" class="button">VIEW PROJECT</a>
+              <a href="#" class="button">VIEW CODE</a>
+            </div>
+          </article>
+          <article class="projects__content">
+            <div class="article-image">
+              <picture>
+                <source srcset="./img/img-portfolio3@3x.png" media="(min-width: 1200px)"/>
+                <source srcset="./img/img-portfolio3@2x.png" media="(min-width: 768px)"/>  
+                <img src="./img/img-portfolio3.png" alt="imagen portfolio3"/>
+              </picture>
+            </div>
+            <div class="projects__content--summary">
+              <h4 class="projects__content--summary-title">TODO WEB APP</h4>
+              <div class="technologies">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JAVASCRIPT</p>
+              </div>
+            </div>
+            <div class="projects__content--buttons">
+              <a href="#" class="button">VIEW PROJECT</a>
+              <a href="#" class="button">VIEW CODE</a>
+            </div>
+          </article>
+          <article class="projects__content">
+            <div class="article-image">
+              <picture>
+                <source srcset="./img/img-portfolio4@3x.png" media="(min-width: 1200px)"/>
+                <source srcset="./img/img-portfolio4@2x.png" media="(min-width: 768px)"/>  
+                <img src="./img/img-portfolio4.png" alt="imagen portfolio4"/>
+              </picture>
+            </div>
+            <div class="projects__content--summary">
+              <h4 class="projects__content--summary-title">ENTERTAINMENT WEB APP</h4>
+              <div class="technologies">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JAVASCRIPT</p>
+              </div>
+            </div>
+            <div class="projects__content--buttons">
+              <a href="#" class="button">VIEW PROJECT</a>
+              <a href="#" class="button">VIEW CODE</a>
+            </div>
+          </article>
+          <article class="projects__content">
+            <div class="article-image">
+              <picture>
+                <source srcset="./img/img-portfolio5@3x.png" media="(min-width: 1200px)"/>
+                <source srcset="./img/img-portfolio5@2x.png" media="(min-width: 768px)"/>  
+                <img src="./img/img-portfolio5.png" alt="imagen portfolio5"/>
+              </picture>
+            </div>
+            <div class="projects__content--summary">
+              <h4 class="projects__content--summary-title">MEMORY GAME</h4>
+              <div class="technologies">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JAVASCRIPT</p>
+              </div>
+            </div>
+            <div class="projects__content--buttons">
+              <a href="#" class="button">VIEW PROJECT</a>
+              <a href="#" class="button">VIEW CODE</a>
+            </div>
+          </article>
+          <article class="projects__content">
+            <div class="article-image">
+              <picture>
+                <source srcset="./img/img-portfolio6@3x.png" media="(min-width: 1200px)"/>
+                <source srcset="./img/img-portfolio6@2x.png" media="(min-width: 768px)"/>  
+                <img src="./img/img-portfolio6.png" alt="imagen portfolio6"/>
+              </picture>
+            </div>
+            <div class="projects__content--summary">
+              <h4 class="projects__content--summary-title">ART GALLERY SHOWCASE</h4>
+              <div class="technologies">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JAVASCRIPT</p>
+              </div>
+            </div>
+            <div class="projects__content--buttons">
+              <a href="#" class="button">VIEW PROJECT</a>
+              <a href="#" class="button">VIEW CODE</a>
+            </div>
+          </article>
         </section>
         <section class="contact">
           <div class="contact__box">
-            <h2 class="contact__box--title">CONTACT</h2>
-            <p class="contact_box--description">I would love to hear about your project and could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+            <h2 class="contact__box--title">Contact</h2>
+            <p class="contact_box--description">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
           </div>
           <div class="contact__form">
             <form action="#" method="post" novalidate>
@@ -108,18 +212,18 @@
               </div>
           
               <div class="input-group">
-                <textarea name="comentarios" rows="6" placeholder="MESSAGE" required></textarea>
+                <textarea name="comentarios" rows="5" placeholder="MESSAGE" required></textarea>
                 <span class="error-message">Required field</span>
               </div>
           
               <button type="submit">SEND MESSAGE</button>
             </form>
+            <hr class="hr3">
           </div>
         </section>
-        <hr class="hr3">
       </main>
       <footer class="footer">
-        <img src="./img/logo.svg" alt="logo">
+        <img class="logo" src="./img/logo.svg" alt="logo">
         <nav class="navbar">
           <ul>
             <li><img src="./img/ico-github.svg" alt="logo github"></li>

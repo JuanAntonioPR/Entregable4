@@ -1,1 +1,49 @@
 @use "../abstracts/abstracts" as ab;
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: ab.$color-gris-oscuro;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    padding-top: 30px;
+    padding-bottom: 70px;
+
+    .logo {
+        padding: 0 20px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+
+        li {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+
+            &:hover {
+                transform: scale(1.2);
+                opacity: 0.7;
+
+                img {
+                    filter: brightness(0) saturate(100%) invert(71%) sepia(38%) saturate(576%) hue-rotate(101deg) brightness(98%) contrast(96%);
+                }
+            }
+
+            img {
+                width: 28px;
+                height: 28px;
+                display: block;
+            }
+        }
+    }
+}

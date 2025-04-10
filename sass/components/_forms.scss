@@ -5,7 +5,6 @@
     margin: 0 auto;
     padding: 20px;
     font-family: v.$fuente;
-    background-color: v.$color-gris-oscuro;
 
     form {
         display: flex;
@@ -13,7 +12,7 @@
     
         .input-group {
             position: relative;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
     
             textarea {
                 resize: none;
@@ -26,12 +25,13 @@
                 border-bottom: 2px solid v.$color-gris-claro;
                 background: transparent;
                 font-size: 1rem;
-                padding: 10px 20px;
+                padding: 20px 20px;
                 font-family: v.$fuente;
                 color: v.$color-blanco;
         
                 &::placeholder {
                     font-family: v.$fuente;
+                    font-size: v.$bodyL;
                     color: v.$color-gris-claro;
                 }
         
@@ -79,6 +79,9 @@
         button {
             @include m.button;
             align-self: flex-end;
+            font-size: v.$bodyL;
+            font-weight: 500;
+            margin-bottom: 50px;
         }
     }
 }

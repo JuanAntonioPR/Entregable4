@@ -16,6 +16,10 @@
         padding: 40px 30px 20px 30px;
     }
 
+    @include ab.breakpoint(desktop) {
+        padding: 50px calc((100vw - 1110px)/2);
+    }
+
     .logo {
         padding: 0 20px;
 
@@ -33,6 +37,10 @@
 
         @include ab.breakpoint(tablet) {
             gap: 30px;
+        }
+
+        @include ab.breakpoint(desktop) {
+            gap: 40px;
         }
 
         li {
@@ -56,6 +64,13 @@
                     width: 32px;
                     height: 32px;
                 }
+            }
+
+        }
+
+        @include ab.breakpoint(desktop) {
+            li:last-child {
+                margin-right: 40px;
             }
         }
     }

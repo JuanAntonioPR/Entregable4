@@ -18,6 +18,11 @@
         padding: 20px 30px 60px 30px;
     }
 
+    @include ab.breakpoint(desktop) {
+        padding: 20px calc((100vw - 1110px)/2);
+        padding-bottom: 120px;
+    }
+
     .logo {
         padding: 0 20px;
         width: 200px;

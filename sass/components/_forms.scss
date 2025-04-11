@@ -16,6 +16,12 @@
             padding: 0px 140px;
         }
 
+        @include m.breakpoint(desktop) {
+            padding: 0;
+            width: 480px;
+
+        }  
+
         .input-group {
             position: relative;
             margin-bottom: 30px;

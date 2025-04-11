@@ -6,10 +6,16 @@
     padding: 20px;
     font-family: v.$fuente;
 
+    
     form {
         display: flex;
         flex-direction: column;
-    
+        
+        @include m.breakpoint(tablet) {
+            margin: 0;
+            padding: 0px 140px;
+        }
+
         .input-group {
             position: relative;
             margin-bottom: 30px;
@@ -82,6 +88,10 @@
             font-size: v.$bodyL;
             font-weight: 500;
             margin-bottom: 50px;
+
+            @include m.breakpoint(tablet) {
+                font-size: v.$bodyL + 4px;
+            }
         }
     }
 }
